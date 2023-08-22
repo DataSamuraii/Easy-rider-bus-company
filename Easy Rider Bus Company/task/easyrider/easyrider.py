@@ -188,3 +188,13 @@ def check_on_demands(input_json):
         return 'On demand stops test:\nWrong stop type: ', sorted(incorrect_o_stops)
     else:
         return 'On demand stops test:\nOK'
+
+
+if __name__ == '__main__':
+    print(check_data_type(json_input),
+          check_data_format(json_input),
+          get_buses(json_input),
+          check_stops(json_input),
+          check_time(json_input),
+          check_on_demands(json_input),
+          sep='\n\n')
